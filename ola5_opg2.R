@@ -162,4 +162,5 @@ dbWriteTable(con, "anho", anho_new, append = T)
 dbWriteTable(con, "risoe", risoe_new, append = T)
 dbWriteTable(con, "aarhus", aarh3_new, append = T)
 
-
+## Disconnect
+dbDisconnect(con)
