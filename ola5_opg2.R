@@ -140,7 +140,7 @@ con <- dbConnect(MariaDB(),
                  host="localhost",
                  db="miljo",
                  user="root",
-                 password = Sys.env("password"))
+                 password = Sys.getenv("password"))
 
 ##### Henter eksisterende data til anti-join #####
 hcab_old <- dbReadTable(con, "hcab")
